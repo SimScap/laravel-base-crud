@@ -9,7 +9,18 @@ use App\Comic;
 class HomeController extends Controller
 {
 public function index(){
-    $comics = Comic::all();
-    return view('comics.index', ["comics" => $comics]);
-}    
+    $newComics = Comic::all();
+    return view('comics.index', ["comics" => $newComics]);
+}
+
+public function show($id)
+    {
+        $comics = Comic::findOrFail($id);
+        return view('comics.show', ["comics" => $comics]);
+    }    
+
+public function create()
+    {
+        return view('comics.create');
+    }    
 }
