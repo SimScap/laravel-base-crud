@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+main {
+    height: calc(100vh - 85px);
+    overflow-y: auto;
+}
+div.container-fluid{
+    div.card{
+        border: 2px solid black;
+        height: 200px;
+        width: 250px;
+    }
+}
+footer{
+    height: 40px;
+    background-color: lightblue;
+}
+
