@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Comics')   
+@section('title', 'Info')   
 
 @section('main-content')
 <main>
@@ -9,4 +9,3 @@
         </div>
     </div>
 </main>
-@endsection
