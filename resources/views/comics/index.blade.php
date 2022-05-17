@@ -22,13 +22,13 @@
                     <tbody>
                         @foreach ($comics as $comic)
                         <tr>
-                            <th scope="row">1</th>
                             <td>{{ $comic->title}}</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <td>{{ $comic->description}}</td>
+                            <td>{{ $comic->thumb}}</td>
+                            <td>{{ $comic->price}}</td>
+                            <td>{{ $comic->series}}</td>
+                            <td>{{ $comic->sale_date}}</td>
+                            <td>{{ $comic->type}}</td>
                         </tr>
                         @endforeach                  
                     
