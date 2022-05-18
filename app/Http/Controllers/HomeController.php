@@ -38,6 +38,6 @@ public function store(Request $request)
     $comic->type = $data['type'];
     $comic->save();
 
-    return redirect()->route("comics.show", $comic);
+    return redirect()->route("comics.index", $comic);
 }
 }

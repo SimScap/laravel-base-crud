@@ -22,7 +22,8 @@
                     <tbody>
                         @foreach ($comics as $comic)
                         <tr>
-                            <td>{{ $comic->title}}
+                            <td>
+                            <a href='{{route("comics.show", $comic->id)}}' class="card-link">{{ $comic->title}}</a>
                             </td>
                             <td>{{ $comic->description}}</td>
                             <td>{{ $comic->thumb}}</td>
