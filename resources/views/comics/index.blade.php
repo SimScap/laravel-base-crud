@@ -33,7 +33,7 @@
                             <td>{{ $comic->type}}</td>
                             <td>
                                 <a href='{{route("comics.edit", $comic)}}'>
-                                    <button type="submit" class="btn btn-primary btn-sm"> edit
+                                    <button type="submit" class="btn btn-warning btn-sm"> edit
                                     </button>
                                 </a>
                             </td>

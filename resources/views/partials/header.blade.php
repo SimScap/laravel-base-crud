@@ -12,7 +12,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
-                    </li>
+                    </li>                 
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
@@ -30,6 +30,9 @@
                 </ul>
                 <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a href='{{route("comics.create", $comic)}}'>
+                    <button class="btn btn-sm btn-primary m-1">create</button>
+                    </a>
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
