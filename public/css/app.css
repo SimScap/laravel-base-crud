@@ -11258,3 +11258,7 @@ footer {
   height: 40px;
   background-color: lightblue;
 }
+
+a {
+  text-decoration: none;
+}
