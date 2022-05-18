@@ -61,4 +61,9 @@ public function update(Request $request, Comic $comic)
 
     return redirect()->route("comics.index", $comic);
 }
+public function destroy(Comic $comic)
+{
+    $comic->delete();
+    return redirect()->route("comics.index");
+}
 }
