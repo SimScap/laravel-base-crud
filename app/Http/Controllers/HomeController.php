@@ -47,9 +47,8 @@ public function edit(Comic $comic)
 }
 
 public function update(Request $request, Comic $comic)
-{
-    /*
-        $data = $request->all();
+{   
+    $data = $request->all();
 
     $comic->title = $data['title'];
     $comic->description = $data['description'];
@@ -61,6 +60,5 @@ public function update(Request $request, Comic $comic)
     $comic->save();
 
     return redirect()->route("comics.index", $comic);
-    */
 }
 }
