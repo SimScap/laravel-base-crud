@@ -30,11 +30,12 @@
                 </ul>
                 <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <a href='{{route("comics.create", $comic)}}'>
-                    <button class="btn btn-sm btn-primary m-1">create</button>
-                    </a>
+              
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            <a href='{{route("comics.create")}}'>
+                <button class="btn btn-sm btn-primary m-1">create</button>
+            </a>
         </div>
         </div>
     </nav>
